@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <style>
+            table{
+                border: 2px solid black;
+            }
+            tr{
+                padding: 10px;
+            }
+        </style>
+        <p align="center">Calculator</p>
+    </head>
+    <body> 
+        <form name="Calculator" class="calculator">
+            <table align="center">
+                <tr>
+                    <td colspan="3" id="result">
+                        <input type="text" name="Input">
+                    </td>
+                    <td>
+                        <input type="button" name="clear" value="c" onclick="Calculator.Input.value=''">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" name="seven" value="7" onClick="Calculator.Input.value+='7'">
+                    </td>
+                    <td>
+                        <input type="button" name="eight" value="8" onClick="Calculator.Input.value+='8'">
+                    </td>
+                    <td>
+                        <input type="button" name="nine" value="9" onClick="Calculator.Input.value+='9'">
+                    </td>
+                    <td>
+                        <input type="button" name="div" value="/" onClick="Calculator.Input.value+='/'">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" name="four" value="4" onClick="Calculator.Input.value+='4'">
+                    </td>
+                    <td>
+                        <input type="button" name="five" value="5" onClick="Calculator.Input.value+='5'">
+                    </td>
+                    <td>
+                        <input type="button" name="six" value="6" onClick="Calculator.Input.value+='6'">
+                    </td>
+                    <td>
+                        <input type="button" name="mul" value="*" onClick="Calculator.Input.value+='*'">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" name="one" value="1" onClick="Calculator.Input.value+='1'">
+                    </td>
+                    <td>
+                        <input type="button" name="two" value="2" onClick="Calculator.Input.value+='2'">
+                    </td>
+                    <td>
+                        <input type="button" name="three" value="3" onClick="Calculator.Input.value+='3'">
+                    </td>
+                    <td>
+                        <input type="button" name="minus" value="-" onClick="Calculator.Input.value+='-'">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" name="zero" value="0" onClick="Calculator.Input.value+='0'">
+                    </td>
+                    <td>
+                        <input type="button" name="dot" value="." onClick="Calculator.Input.value+=.">
+                    </td>
+                    <td>
+                        <input type="button" name="equalTo" value="=" onClick="Calculator.Input.value=eval(Calculator.Input.value)">
+                    </td>
+                    <td>
+                        <input type="button" name="add" value="+" onClick="Calculator.Input.value+='+'">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body> 
+</html>
